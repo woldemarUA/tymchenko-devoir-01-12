@@ -33,7 +33,10 @@ COPY supervisord.conf ${supervisor_conf}
 RUN mkdir -p /run/php && \
     chown -R www-data:www-data /var/www/html && \
     chown -R www-data:www-data /run/php
-    
+
+# Ajoute info.php a WEB SITE racine
+RUN echo '<?php phpinfo(); ?>' > /var/www/html/info.php 
+
 # Configuration du volume
 VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
 
