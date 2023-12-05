@@ -94,7 +94,6 @@ function renderElement(elementObj, className, adresse = false) {
                         innerEl.setAttribute("class", "reseaux");
                         innerEl.innerHTML = el;
                         adressCont.appendChild(innerEl)
-                        console.log(innerEl)
                         container.appendChild(adressCont);
                     } else {
                         innerEl.innerHTML = el;
@@ -123,3 +122,4 @@ function renderElement(elementObj, className, adresse = false) {
     return container
 
 }
+
