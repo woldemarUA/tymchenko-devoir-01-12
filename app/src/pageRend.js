@@ -1,3 +1,5 @@
+// GENERER structure du DOCUMENT
+
 var cvBody = document.getElementById("app");
 cvBody.className = "cv-body"
 
@@ -27,7 +29,7 @@ side.appendChild(competenceContainer)
 
 
 
-// creer main div avec civilite et exp
+// creer main div  exp
 var main = document.createElement('div');
 main.id = "main"
 cv.appendChild(main)
