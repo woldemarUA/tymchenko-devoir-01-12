@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65%;
+}
+
+body {
+    font-size: 2rem;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book{
+    margin: 0.5rem auto;
+    border: 0.3rem rebeccapurple solid;
+    width: 30%;
+}
