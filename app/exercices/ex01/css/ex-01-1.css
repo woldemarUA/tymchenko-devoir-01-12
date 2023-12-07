@@ -8,6 +8,17 @@ body{
     height: 100vh;
 }
 
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+    font-family: Poppins;
+}
+
+.haut, .gauche, .milieu {
+    padding: 0.5rem;
+}
+
+
 .haut {
     background: red;
     height: 15vh;

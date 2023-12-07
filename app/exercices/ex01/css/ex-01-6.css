@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+    font-family: Poppins;
+}
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+
+
+.menu, .haut, .bas,.droite, .gauche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.haut {
+    background: rgb(241, 69, 69);
+    min-height: 10vh;
+    
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    min-height: 90vh;
+}
+
+.box-1 {
+    display: grid;
+    grid-template-columns: 1fr ;
+  
+}
+
+.box-int {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.2rem;
+    padding: 0.2rem;
+    min-height: 60vh;
+}
+
+.box-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(52, 222, 114);
+}
+
+.haute{
+    background: red;
+}
+
+.gauche, .droite {
+    background: blue;
+}
+
+.bas{
+    background: rgb(239, 200, 45);
+}
+
+
+

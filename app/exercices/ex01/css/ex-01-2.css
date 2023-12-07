@@ -3,9 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+    font-family: Poppins;
+}
+
 
 body{
     height: 100vh;
+    font-size: 1.4erm;
+}
+
+
+.haut, .gauche, .droite, .milieu {
+    padding: 0.5rem;
 }
 
 .haut {
