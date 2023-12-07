@@ -1,0 +1,18 @@
+@import url("./main-regles.css");
+
+table {
+    /* border: 0.3rem solid black; */
+    height: 80vh;
+    width: 80%;
+    margin: 3rem auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: 0.1rem solid black;
+}
+
+td{
+    text-align: center;
+    width: 16%;
+}

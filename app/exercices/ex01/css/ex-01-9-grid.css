@@ -1,0 +1,87 @@
+@import url('/css/main-regles.css');
+
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    min-height: 80vh;
+    grid-template-areas: 
+        "box1 box2 box3 box4 box5 box6"
+        "box7 box8 box9 box9 box10 box11"
+        "box12 box8 box9 box9 box10 box11"
+        "box13 box8 box14 box14 box14 box11"
+        "box15 box8 box16 box16 box16 box16";
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.box {
+    border: 0.1rem solid black;
+}
+
+.box-1{
+    grid-area: box1;
+    
+}
+
+.box-2{
+    grid-area: box2;
+}
+
+.box-3{
+    grid-area: box3;
+    
+}
+
+.box-4{
+    grid-area: box4;
+    
+}
+.box-5{
+    grid-area: box5;
+    
+}
+.box-6{
+    grid-area: box6;
+    
+}
+.box-7{
+    grid-area: box7
+    
+}
+.box-8{
+    /* grid-row: 2/6; */
+    grid-area: box8;
+}
+
+.box-9{
+    grid-area: box9;
+    
+}
+
+.box-10{
+    grid-area: box10;
+}
+
+.box-11{
+    grid-area: box11;
+}
+
+.box-12{
+    grid-area: box12;
+}
+
+.box-13{
+    grid-area: box13;
+}
+
+.box-14{
+    grid-area: box14;
+}
+
+.box-15{
+    grid-area: box15;
+}
+
+.box-16{
+    grid-area: box16;
+}
