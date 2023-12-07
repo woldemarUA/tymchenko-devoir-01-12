@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    overflow: clip;
+}
+
+
+.haut {
+    background: rgb(10, 141, 130);
+    height: 12%;
+}
+
+
+
+.menu{
+    background: rgb(108, 22, 114);
+    height: 5%; 
+}
+
+.milieu {
+    background: rgb(230, 153, 9);
+    height: 70%;
+    margin: 1.5rem;
+}
+
+.bas {
+    background: rgb(10, 141, 130);
+    height: 13%;
+}

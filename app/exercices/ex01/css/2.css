@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.haut {
+    background: red;
+    height: 15vh;
+}
+
+.content {
+    display: flex;
+    height:85vh;
+}
+
+.gauche {
+    background: lightblue;
+    width: 15%;
+}
+
+.milieu {
+    background: rgb(79, 185, 79);
+    width:70%
+}
+
+.droite{
+    background: rgb(103, 34, 34);
+    width: 15%;
+}

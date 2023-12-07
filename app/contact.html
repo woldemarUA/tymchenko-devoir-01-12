@@ -10,32 +10,34 @@
    <div id="form-container">
     <h1>Contactez moi:</h1>
     <form id="myForm" method="POST">
-
+        <!-- NOM -->    
         <div class="form-group">
             <label for="nom">Nom:</label>
             <input type="text" id="nom"name="nom" >
         </div>
-    
+         <!-- PRENOM -->
         <div class="form-group">
             <label for="prenom">Prenom:</label>
             <input type="text" name="prenom" id="prenom"  >
         </div>
-
+        <!-- Adresse -->
         <div class="form-group">
             <label for="adresse">Adresse:</label>
             <input type="text" name="adresse" id="adresse"  >
         </div>
 
+        <!-- CODE POSTALE -->
+
         <div class="form-group">
             <label for="codePostale">Code postale:</label>
             <input type="text" name="codePostale" id="codePostale"  >
         </div>
-
+        <!-- VILLE -->
         <div class="form-group">
             <label for="ville">Ville:</label>
             <input type="text" name="ville" id="ville"  >
         </div>
-
+        <!-- PAYS -->
         <div class="form-group">
             <label for="pays">Pays:</label>
             <!-- Country names and Country Code -->
@@ -66,22 +68,22 @@
                 <option value="US">United States</option>
             </select>
         </div>
-
+        <!-- PSEUDO -->
         <div class="form-group">
             <label for="pseudo">Pseudo:</label>
             <input type="text" name="pseudo" id="pseudo"  >
         </div>
-
+        <!-- MOT DE PASS -->
         <div class="form-group">
             <label for="mdp">Mot de pass:</label>
             <input type="password" name="mdp" id="mdp"  >
         </div>
-
+        <!-- INFO COMP -->
         <div class="form-group">
-            <label for="infoComp">Pseudo:</label>
+            <label for="infoComp">Infos complementaire:</label>
             <textarea name="infoComp" id="infoComp" cols="30" rows="10"></textarea>
         </div>
-
+        <!-- SEXE -->
         <div class="form-group">
             <div id="radio">
                 <h3>Sexe:</h3>
@@ -91,41 +93,44 @@
                 <input type="radio" name="femme" id="femme"  >
             </div>
         </div>
-      
-        <div class="form-group">
+        <!-- DATE DE NAISSANCE -->
+        <div class="form-group" id="hob">
+            <label for="naissance">Naissance:</label>
+            <input type="date" name="naissance" id="naissance">
+           
+        </div>
+        <!-- HOBBY -->
+        <div class="form-group" id="hob">
             <label for="hobby">Hobbies:</label>
             <select name="hobby" id="hobby">
-                <option selected="selected">choisisez</option>
+                <!-- <option selected="selected">choisisez</option>
                 <option value="cosmo">cosmonaut</option>
                 <option value="etudiant">tennis</option>
                 <option value="president">president</option>
                 <option value="echecs">echecs</option>
                 <option value="comics">comics</option>
-                <option value="autre">autre</option>
+                <option value="autre">autre</option> -->
             </select>
         </div>
-
+        <!-- EMAIL -->
         <div class="form-group"> 
             <label for="email" name="email" required>Votre email</label>
-            <input id="email" type="email" >
+            <input id="email" type="email" placeholder="example@example.com">
         </div>
-
+        <!-- FICHIER -->
         <div class="form-group">
-            <input type="submit" value="Submit">
+            <label for="fichier">Telechargez votre fichier</label>
+            <input type="file" name="fichier" id="fichier">
         </div>
-
-     
-
-        
-
-       
-
-       
-
-        
+        <!-- SUBMIT -->
+        <div class="form-group">
+            <input type="submit" value="Submit" accept="image/png, image/jpeg">
+        </div>
+  
     </form>
    </div> 
-
+<script src="./src/scripts/renderSelect.js"></script>
 <script src="./src/scripts/formAction.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.bas {
+    background: rgb(230, 153, 9);
+    height: 15vh;
+}
+
+.content {
+    display: flex;
+    height:85vh;
+}
+
+.gauche {
+    background: rgb(10, 141, 130);
+    width: 50%;
+}
+
+
+
+.droite{
+    background: rgb(108, 22, 114);
+    width: 50%;
+}
