@@ -1,2 +1,75 @@
 @import url("../../ex01/css/main-regles.css");
 
+
+.container{
+    background-color: grey;
+    width:100rem;
+    margin: 5rem auto;
+}
+
+.galerie{
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.polaroid{
+    background: whitesmoke;
+    height: 20rem;
+    width: 15rem;
+    padding-top: 1rem;
+    margin: 1rem;
+   
+}
+
+.polaroid:nth-child(1){
+    transform: rotate(5deg);
+}
+.polaroid:nth-child(2){
+    transform: rotate(-3deg);
+}
+.polaroid:nth-child(3){
+    transform: rotate(-8deg);
+}
+
+.polaroid:nth-child(4){
+    transform: rotate(4deg);
+}
+
+.polaroid:nth-child(5){
+    transform: rotate(-4deg);
+}
+.polaroid:nth-child(6){
+    transform: rotate(3deg);
+}
+
+.photo{
+    width: 13rem;
+    height:15rem;
+    background-size: cover;
+    background-position: 60%;
+    margin: auto;
+}
+
+.p1{
+    background-image: url("../img/1.png");
+}
+
+.p2{
+    background-image: url("../img/2.png");
+}
+.p3{
+    background-image: url("../img/3.png");
+}
+.p4{
+    background-image: url("../img/4.png");
+
+}
+.p5{
+    background-image: url("../img/5.png");
+}
+.p6{
+    background-image: url("../img/6.png");
+}
+
+
