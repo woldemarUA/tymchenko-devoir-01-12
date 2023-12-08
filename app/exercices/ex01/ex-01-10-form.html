@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EX-01-10-form</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet"/>
+        <link rel="stylesheet" href="/exercices/ex01/css/ex-01-10.css">
+    </head>
+<body>
+    <!-- Form toute -->
+    <form action="" method="post">
+        <!-- Information personelle -->
+        <div id="personelle" class="formSection">
+            <h2>Information personelle</h2>
+            <ul>
+                <li>
+                    <label for="civilite">Civilite <span class="asterix">*</span>:</label> 
+                    <select name="civilite" id="civilite" required>
+                        <option disabled selected>Choissisez</option>
+                        <option value="monsieur">Monsieur</option>
+                        <option value="madame">Madame</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="nom">Nom <span class="asterix">*</span>:</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre Nom ici" required>
+                </li>
+                <li>
+                    <label for="prenom">Prenom <span class="asterix">*</span>:</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prenom ici" required>
+                </li>
+                <li>
+                    <label for="naissance">Date de naissance<span class="asterix">*</span>:</label>
+                    <input type="date" name="naissance" id="naissance" required>
+                </li>
+                <li>
+                    <label for="fixe">Numéro de téléphone fixe <span class="asterix">*</span>:</label>
+                    <input type="tel" name="fixe" id="fixe" required>
+                </li>
+                <li>
+                    <label for="portable">Numéro de téléphone portable <span class="asterix">*</span>:</label>
+                    <input type="tel" name="portable" id="portable" required>
+                </li>
+                <li>
+                    <label for="nuMRue">Numéro de rue <span class="asterix">*</span>:</label>
+                    <input type="number" name="nuMRue" id="nuMRue">
+                </li>
+                <li>
+                    <label for="rue">Nom de rue <span class="asterix">*</span>:</label>
+                    <input type="text" name="rue" id="rue">
+                </li>
+                <li>
+                    <label for="code">Code postal <span class="asterix">*</span>:</label>
+                    <input type="number" name="code" id="code">
+                </li>
+                <li>
+                    <label for="ville">Ville<span class="asterix">*</span>:</label>
+                    <input type="text" name="ville" id="ville" placeholder="Votre Ville ici">
+                </li>
+                <li>
+                    <label for="pseudo">Pseudo<span class="asterix">*</span>:</label>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Entrer votre pseudo ici">
+                </li>
+                <li>
+                    <label for="mdp">Mot de passe<span class="asterix">*</span>:</label>
+                    <div class="souvenir">
+                        <input type="password" name="mdp" id="mdp" placeholder="Entrer votre mot de passe ici">
+                    <input type="checkbox" name="souvenir" id="souvenir" checked><span>Se souvenir de moi</span>
+                    </div> 
+                </li>
+                <input class="btn" type="button" value="Soumettre">
+            </ul>
+        </div>
+        <!-- Information complementaire -->
+        <div id="complementaire" class="formSection">
+            <h2>Information complementaire</h2>      
+            <ul>
+                <li >
+                    <span>Quel est votre niveau en développement</span>
+                    <div class="radioNiv"> 
+                            <div>
+                                <input type="radio" name="devNiv" id="debutant" value="débutant" checked>
+                                <label for="debutant">Débutant</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="devNiv" id="junior" value="junior" >
+                                <label for="debutant">Junior</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="devNiv" id="expert" value="expert" >
+                                <label for="debutant">Expert</label>
+                            </div>
+                        </div>
+                </li>
+                <span class="niveau">Quel est votre niveau de connaissance dans les différents langages:</span>
+                <div id="langues">
+                    <li> 
+                        <label for="html"><span>HTML/CSS</span></label>
+                        <input type="checkbox" name="html" id="html" value="html/css" checked>
+                    </li>
+                    <li > 
+                        <label for="python">Python</label>
+                        <input type="checkbox" name="python" id="python" value="python">
+                    </li>
+                    <li > 
+                        <label for="php">PHP</label>
+                        <input type="checkbox" name="php" id="php" value="php">
+                    </li>
+                    <li > 
+                        <label for="java">Java</label>
+                        <input type="checkbox" name="java" id="java" value="java">
+                    </li>
+                    <li > 
+                        <label for="node">NodeJS</label>
+                        <input type="checkbox" name="node" id="node" value="node">
+                    </li>
+                    <li > 
+                        <label for="react">ReactJS</label>
+                        <input type="checkbox" name="react" id="react" value="react">
+                    </li>
+                    <li > 
+                        <label for="c">C#</label>
+                        <input type="checkbox" name="c" id="c" value="c">
+                    </li>
+                </div>
+                    
+                    <li>
+                        <label for="os">Sur quel OS travaillez-vous?</label>
+                        <select name="os" id="os">
+                            <option disabled selected>Choissisez OS</option>
+                            <option value="windows">MS Windows</option>
+                            <option value="macos">Mac OS</option>
+                            <option value="Linux">Linux</option>
+                            <option value="Unix">Unix</option>
+                        </select>
+                    </li>
+                </ul>
+            
+        </div>
+        <!-- Information lièes à la promotion  -->
+        <div id="promotion" class="formSection">
+            <h2>Information lièes à la promotion</h2>
+            <ul>
+                <li id="prom-select">
+                    <label for="promotionType">promotion beweb?</label>
+                
+                        <div>
+                            <select id="promotionType">
+                                <option value="">Sélectionnez un type de promotion</option>
+                            </select>
+                            <select id="promotionSubtype">
+                                <option value="">Sélectionnez d'abord un type</option>
+                            </select>
+                        </div>
+                </li>
+                <li>
+                    <label for="url-td">Merci de nous faire parvenir votre URL TD_1</label>
+                    <input type="url"name="url-td" id="url-td" placeholder="URL">
+                </li>
+                <li>
+                    <textarea name="" id="" cols="10" rows="5" >Si vous avez des questions vous pouvez nous les laisser en commentaire ci-dessous</textarea>
+                </li>
+              
+                    <input id="submit" type="submit" value="Envoyer" class="btn">
+                
+            </ul>
+        </div>
+    </form>
+<script src="./scripts/promotion.js"></script>
+</body>
+</html>
