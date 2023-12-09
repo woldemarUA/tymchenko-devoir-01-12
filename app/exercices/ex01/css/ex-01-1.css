@@ -25,16 +25,15 @@ html {
 }
 
 .content {
-    display: flex;
-    height:85vh;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    min-height:85vh;
 }
 
 .gauche {
     background: lightblue;
-    width: 15%;
 }
 
 .milieu {
     background: rgb(79, 185, 79);
-    width:85%
 }

@@ -12,7 +12,6 @@ html {
 
 
 body{
-    height: 100vh;
     font-size: 1.4erm;
 }
 
@@ -27,18 +26,19 @@ body{
 }
 
 .content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     height:85vh;
 }
 
 .gauche {
     background: rgb(10, 141, 130);
-    width: 50%;
+   
 }
 
 
 
 .droite{
     background: rgb(108, 22, 114);
-    width: 50%;
+   
 }
