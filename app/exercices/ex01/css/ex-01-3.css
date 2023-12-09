@@ -13,6 +13,9 @@ html {
 
 body{
     font-size: 1.4erm;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85vh 15vh;
 }
 
 
@@ -20,25 +23,21 @@ body{
     padding: 0.5rem;
 }
 
-.bas {
-    background: rgb(230, 153, 9);
-    height: 15vh;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height:85vh;
-}
-
 .gauche {
     background: rgb(10, 141, 130);
-   
+    grid-column: 1/2;  
 }
 
 
 
 .droite{
     background: rgb(108, 22, 114);
+    grid-column: 2/3;
    
+
+}
+
+.bas {
+    background: rgb(230, 153, 9);
+   grid-column: -3/-1;
 }

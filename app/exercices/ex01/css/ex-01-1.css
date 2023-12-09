@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-}
 
 html {
     min-height: 100vh;
     font-size: 62.5%;
     font-family: Poppins;
+}
+
+body{
+    height: 100vh;
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 15% 85%;
 }
 
 .haut, .gauche, .milieu {
@@ -21,17 +26,13 @@ html {
 
 .haut {
     background: red;
-    height: 15vh;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    min-height:85vh;
+   
+    grid-column: 1/3;
 }
 
 .gauche {
     background: lightblue;
+    grid-column: 1/2;
 }
 
 .milieu {

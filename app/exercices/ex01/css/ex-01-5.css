@@ -16,8 +16,8 @@ body{
     background: rgb(222, 175, 175);
     font-family: Poppins;
     font-size: 1.4rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 10vh 5vh 1fr 10vh;
 }
 
 
@@ -27,21 +27,13 @@ body{
     justify-content: center;
 }
 
-.haut, .bas {
-    min-height: 10.5vh;
-    
-}
 
 .haut {
-    background:  rgb(108, 22, 114);
-    
-    
-    
+    background:  rgb(108, 22, 114);  
 }
 
 .menu{
     background: rgb(60, 11, 222);
-    min-height: 5vh; 
     padding: 0.3rem;
     font-size: 1.4rem;
   
@@ -49,15 +41,13 @@ body{
 
 .bas {
     background: rgb(120, 121, 121);
-    
-    
+   
 }
 
 .milieu {
     background: whitesmoke;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 70vh;
     margin: 1.5rem;
     padding-bottom: 0.4rem;
     padding-right: 0.4rem;
@@ -69,7 +59,6 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.4rem;
     padding: 0.4rem 0 0 0.4rem ;
-    
 
 }
 

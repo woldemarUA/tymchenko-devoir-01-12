@@ -11,6 +11,10 @@ html {
 
 body{
     font-size: 1.4erm;
+    display: grid;
+    grid-template-columns: 15% 75% 15%;
+    grid-template-rows: 15% 85%;
+    min-height: 100vh;
 }
 
 
@@ -20,26 +24,17 @@ body{
 
 .haut {
     background: red;
-    min-height: 15vh;
-}
-
-.content {
-    display: grid;
-    min-height:85vh;
-    grid-template-columns: 15% 75% 15%;
+    grid-column: 1/4;
 }
 
 .gauche {
-    background: lightblue;
-    
+    background: lightblue; 
 }
 
 .milieu {
     background: rgb(79, 185, 79);
-    
 }
 
 .droite{
     background: rgb(103, 34, 34);
-   
 }

@@ -14,10 +14,12 @@ html {
 body{
     height: 100vh;
     font-size: 1.4erm;
+    display: grid;
+    grid-template-rows: 15vh 10vh 1fr 15vh;
 }
 
 .haut, .bas{
-    min-height: 11.5vh;
+
     background: rgb(10, 141, 130);
 }
 
@@ -29,13 +31,13 @@ body{
 
 .menu{
     background: rgb(108, 22, 114);
-    min-height: 5vh; 
+  
 }
 
 .milieu {
     background: rgb(230, 153, 9);
-    min-height: 68vh;
-    margin: 1.5rem;
+    margin: 2rem;
+ 
 }
 
 
