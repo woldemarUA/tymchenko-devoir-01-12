@@ -1,3 +1,19 @@
+body::before{
+    display: block;
+    content: "";
+    height: 60px;
+}
+/* html{
+    font-size: 62.5%;
+} */
+
+#learn, #instructors, #contact{
+    padding-top: 5rem;
+}
+#questions {
+    padding-top: 5rem;
+}
+
 @media(min-width:768px){
     .email-subs{
         width: 50%;
