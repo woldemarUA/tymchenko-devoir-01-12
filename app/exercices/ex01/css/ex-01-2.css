@@ -10,7 +10,7 @@ html {
 
 
 body{
-    font-size: 1.4erm;
+    font-size: 1.8rem;
     display: grid;
     grid-template-columns: 15% 75% 15%;
     grid-template-rows: 15% 85%;
@@ -25,6 +25,7 @@ body{
 .haut {
     background: red;
     grid-column: 1/4;
+  
 }
 
 .gauche {

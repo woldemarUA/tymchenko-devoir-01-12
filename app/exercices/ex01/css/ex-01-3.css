@@ -12,7 +12,7 @@ html {
 
 
 body{
-    font-size: 1.4erm;
+    font-size: 1.8rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 85vh 15vh;

@@ -22,7 +22,6 @@ body{
     grid-template-columns: 10% auto 10%;
     grid-template-rows: 3vh auto 5vh;
 }
-
 #main .container {
     border: 0.3rem solid lightblue;
     grid-column: 2/3;

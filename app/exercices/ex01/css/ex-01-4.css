@@ -13,7 +13,7 @@ html {
 
 body{
     height: 100vh;
-    font-size: 1.4erm;
+    font-size: 1.8rem;
     display: grid;
     grid-template-rows: 15vh 10vh 1fr 15vh;
 }
